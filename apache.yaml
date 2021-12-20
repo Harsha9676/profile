@@ -1,0 +1,18 @@
+---
+- hosts: webservers
+  become: True
+  tasks:
+    - name: install pacakges
+      yum:
+        name: "httpd"
+        state: "present"
+    - name: start apache
+      service:
+        name: httpd
+        state: started
+        enabled: True
+    - name: Deploy my we page
+      copy:
+        src: index.html
+        dest: var/www/html/
+        
