@@ -214,12 +214,12 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 0.7;
+	opacity: 0.6;
 	z-index: -1;
 }
 #me .me {
-	max-width: 1200px;
-	margin: 0 auto;
+	max-width: 200px;
+	margin: 0 auto; /*magin for content adjust for hello*/
 	padding: 0 50px;
 	justify-content: flex-start;
 }
@@ -227,10 +227,11 @@ p {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
-	position: relative;
+	position: relative;	
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
+	
 }
 #me h1:nth-child(1) {
 	animation-delay: 1s;
@@ -581,6 +582,7 @@ p {
 	/* me */
 	#me h1 {
 		font-size: 7rem;
+
 	}
 	/* End me */
 
